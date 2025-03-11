@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Suomen Sotahistoria</title>
+    <style>
+
+
+
+Run
+Copy code
+.about-button, .back-button {
+    margin-top: 10px;
+    padding: 15px 30px; /* Padding for larger button */
+    background: linear-gradient(135deg, #0077cc, #005fa3); /* Gradient background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1.5em; /* Larger font size */
+    text-decoration: none; /* Remove underline for links */
+    display: inline-block; /* Make link behave like a button */
+    box-shadow: 0 4px 15px rgba(0, 119, 204, 0.5); /* Initial glow effect */
+}
+
+.about-button:hover, .back-button:hover {
+    background: linear-gradient(135deg, #005fa3, #0077cc); /* Darker gradient on hover */
+    transform: translateY(-2px); /* Slightly lift the button */
+    box-shadow: 0 8px 25px rgba(0, 119, 204, 0.7); /* Enhanced glow effect on hover */
+}
+body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #0077cc;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        section:hover {
+            transform: scale(1.02);
+        }
+        h2 {
+            color: #0077cc;
+            font-family: serif;
+            border-bottom: 2px solid #0077cc;
+            padding-bottom: 5px;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            font-family: cursive;
+            color: #555;
+        }
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 10px;
+            transition: transform 0.3s;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+        .additional-info {
+            display: none;
+            margin-top: 10px;
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
+    <script>
+        function toggleInfo(id) {
+            const info = document.getElementById(id);
+            if (info.style.display === "none" || info.style.display === "") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+<header>
+    <h1>1918-2025</h1>
+</header>
+
+<section>
+<h2>tässä on vuodelta 1918</h2>
+<img src="https://alchetron.com/cdn/kingdom-of-finland-1918-7d70f10c-3261-43cf-8f9e-5472a787684-resize-750.jpg" alt="Talvisota" width="250" height="300">
+</section>
+    <section>
+        <h2 onclick="toggleInfo('sisallissota-info')">tässä on vuodelta 2025</h2>
+        <img src="https://th.bing.com/th/id/R.be5190c66307ad15bbcdc82dcd98a9c6?rik=xKV%2bPQbwa%2fSZ5Q&riu=http%3a%2f%2f4.bp.blogspot.com%2f-fmh6uj7fPww%2fUMOyg-_LgWI%2fAAAAAAAAHBM%2f2BuzY6K2KTk%2fs640%2fFindlandMap.gif&ehk=6DH8ik1Nm3L7gNehsMsWOZedVIGJAjAq2hBH72j0T3Y%3d&risl=&pid=ImgRaw&r=0"alt="Talvisota" width="300" height="400">
+</section>
+
+<a href="mikelele.html  " class="back-button">Takas kotiin nappi</a>
+
+</body>
+</html>
