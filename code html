@@ -89,6 +89,31 @@
 }
     </style>
     <script>
+// Get the modal
+var modal = document.getElementById('myModal');
+ 
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+}
+ 
+ 
+// When the user clicks on <span> (x), close the modal
+modal.onclick = function() {
+    img01.className += " out";
+    setTimeout(function() {
+       modal.style.display = "none";
+       img01.className = "modal-content";
+     }, 400);
+    
+ }    
+    
         function toggleInfo(id) {
             const info = document.getElementById(id);
             if (info.style.display === "none" || info.style.display === "") {
@@ -123,6 +148,13 @@
 <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.sotahistoria.fi%2Fwp-content%2Fuploads%2F2022%2F09%2Fpoljarnik.jpg&f=1&nofb=1&ipt=8f3f92cf273ee93dc042ffcc2aebbc9b12e4e914fcfe50c61001947f3b8dd605&ipo=images" width="200" height="300">
 </section>
 <section>
+<h2 onclick="toggleInfo('lapinsota-info')">Lapinsota (1944–1945)</h2>
+<p>
+Lapin sota käytiin vuosina 1944–1945, ja se oli osa toista maailmansotaa. Sodan taustalla oli Suomen ja Neuvostoliiton välinen aselepo ja Saksan vetäytyminen Pohjois-Suomesta. Suomi joutui taistelemaan Saksaa vastaan, koska Neuvostoliitto vaati saksalaisten poistumista alueelta. Saksalaiset harjoittivat "poltetun maan" taktiikkaa, tuhoten infrastruktuuria. Sota päättyi, kun saksalaiset vetäytyivät Norjaan, ja Suomen oli pakko solmia Moskovan rauhansopimus. Lapin sota aiheutti valtavaa tuhoa ja kärsimystä alueella.</p>
+<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fantroblogi.fi%2Fwp-content%2Fuploads%2F2015%2F12%2F1945_27_04_lippu_puolustusvoimat_3129-72-1170x550.jpg&f=1&nofb=1&ipt=d90385ae97b38d44120fc4f4d7079076934090c58f2a1b12894303986783f510&ipo=images	" alt="Lapinsota" width="200" height="300">
+
+</section>
+<section>				
 <p>tällä nappia painamalla on suomen kartta 1918-2025</p>
 <a href="about.html  " class="back-button">Nappi</a>
 </section>
